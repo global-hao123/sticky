@@ -1,13 +1,13 @@
 {
-  "name": "bubble",
+  "name": "sticky",
   "version": "1.0.0",
   "authors": [
     "chenguangyin <chenguangyin@baidu.com>"
   ],
-  "description": "A bubble plugin for jQuery.",
+  "description": "A sticky plugin for jQuery.",
   "keywords": [],
   "license": "MIT",
-  "homepage": "http://gitlab.pro/common-ui/bubble",
+  "homepage": "http://gitlab.pro/common-ui/sticky",
   "ignore": [
     "**/*",
     "!src/**"

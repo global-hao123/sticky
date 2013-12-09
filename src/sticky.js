@@ -36,7 +36,7 @@ var $ = require('common:widget/ui/jquery/jquery.js');
 			scrolling = true;
 		});
 		rAF(function() {
-			var top = $(DOC.body).scrollTop(),
+			var top = $(DOC).scrollTop(),
 				i = 0,
 				j = container.length,
 				curObj = null;

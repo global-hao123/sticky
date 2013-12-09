@@ -4,7 +4,7 @@ A sticky plugin for jQuery.
 
 ## Compatibility
 
-- IE 8-10, Firefox, Opera, Chrome, Safari
+- IE 7-10, Firefox, Opera, Chrome, Safari
 - ltr / rtl
 - Windows / Mac
 

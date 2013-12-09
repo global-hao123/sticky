@@ -12,9 +12,10 @@
         width: 100%;
     }
     .test {
-        width: 200px;
-        height: 100px;
+        width: 180px;
+        height: 160px;
     }
+
     .test0 {
         position: relative;
         margin: 100px auto;
@@ -22,25 +23,63 @@
     }
     .test1 {
         /*margin: 100px auto;*/
-        background-color: #000;
+        background-color: #eee;
         position: absolute;
-        left: 0;
+        left: 400px;
         top: 200px;
+    }
+    .test2 {
+        background-color: #dad;
+    }
+    .test3 {
+        background-color: #cbc;
+        position: absolute;
+        left: 800px;
+        top: 100px;
     }
     </style>
 </head>
 
 <body>
     <div class="test test0"></div>
-    <div class="test test1"></div>
+    <div class="test test1"><pre>
+        var test1 = $(".test1").sticky();
+    </pre></div>
+    <div class="test test2"><pre>
+        var test2 = $(".test2").sticky(0, function() {
+            var that = this;
+            this.css("background-color", "red");
+            setTimeout(function() {
+                that.css("background-color", "#dad");
+            }, 1000);
+        });
+    </pre></div>
+    <div class="test test3"><pre>
+        var test3 = $(".test3").sticky(20, function() {
+            this.css("background-color", "blue");
+        }, function() {
+            this.css("background-color", "gray");
+        });
+    </pre></div>
 </body>
 
 <script src="js/jquery-1.8.3.min.js"></script>
 <script src="js/helper.js"></script>
 <script src="js/sticky.js"></script>
 <script type="text/javascript">
-//$(".test0").sticky();
-$(".test1").sticky();
+var test1 = $(".test1").sticky();
+var test2 = $(".test2").sticky(0, function() {
+    var that = this;
+    that.css("background-color", "red");
+    setTimeout(function() {
+        that.css("background-color", "#dad");
+    }, 1000);
+});
+var test3 = $(".test3").sticky(20, function() {
+    this.css("background-color", "blue");
+}, function() {
+    this.css("background-color", "gray");
+});
 </script>
 
 </html>

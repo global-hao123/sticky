@@ -17,7 +17,7 @@ A sticky plugin for jQuery.
 
 ## Demo
 
-http://view.gitlab.pro/chenguangyin/sticky/raw/master/demo/index.html
+http://global-hao123.github.io/sticky
 
 ## Usage
 

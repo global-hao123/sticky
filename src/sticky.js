@@ -1,10 +1,10 @@
 /**
  * @author Cgy
  * @version 1.0.0
- * @description  
+ * @description
  *     可能存在z-index遮挡问题
- *     
- * 用法： 
+ *
+ * 用法：
    var test1 = $("#test1").sticky();
    var test2 = $("#test2").sticky(0, function() {
 	  this.css("background-color", "red");
@@ -16,7 +16,7 @@
    });
  *
  */
-var $ = require('common:widget/ui/jquery/jquery.js');
+var $ = window.jQuery || window.require && require('common:widget/ui/jquery/jquery.js');
 (function(WIN, DOC, rAF) {
 	var container = [];
 
